@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: laravel-app
+    runtime: docker
+    env: docker
+    plan: free
+    region: oregon
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    autoDeploy: true
